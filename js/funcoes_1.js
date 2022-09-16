@@ -22,17 +22,13 @@ d. Crie uma última função para exibir o CPF formatado através de um alert pa
     alert(recebeCPFUsuario(recebeCPF));
 
     function cpfFormatado(cpf) {
-        for (let cpf of cpfFormatado) {
-            if (cpf == true) {
-            let parte1 = recebeCPF.slice(0, 3);
-            let parte2 = recebeCPF.slice(4, 7);
-            let parte3 = recebeCPF.slice(8, 11);
-            let parte4 = recebeCPF.slice(12, 14);
+        if (cpf == true) {
+            let parte1 = cpf.slice(0, 3);
+            let parte2 = cpf.slice(4, 7);
+            let parte3 = cpf.slice(8, 11);
+            let parte4 = cpf.slice(12, 14);
             return cpf = `${parte1}.${parte2}.${parte3}-${parte4}`;
-            }
         }
     }
-    
     alert(cpfFormatado(cpf));
-
 }
