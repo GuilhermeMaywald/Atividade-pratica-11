@@ -27,7 +27,7 @@ d. Crie uma última função para exibir o CPF formatado através de um alert pa
             let parte4 = cpf.slice(9, 11);
             return cpf = `${parte1}.${parte2}.${parte3}-${parte4}`;
         } else {
-            alert('Digite um CPF válido!');
+            return 'Digite um CPF válido!';
         }
     }
     alert(cpfFormatado(recebeCPF, cpfValido));
